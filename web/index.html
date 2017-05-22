@@ -1,0 +1,231 @@
+-
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kraft Suite</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		
+		<script src="js/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+		
+		<div id="home" class="header">
+			<div class="top-nav">
+						<div class="nav-icon">
+							<a href="#" class="right_bt" id="activator"><span> </span> </a>
+						</div>
+						 <div class="box" id="box" style="top: -1000px;">
+							 <div class="box_content">        					                         
+								<div class="box_content_center">
+								 	<div class="form_content">
+										<div class="menu_box_list">
+										<ul>
+											<li><a href="#home" class="scroll"><span>home</span></a></li>
+											<li><a href="#gallery" class="scroll"><span>gallery</span></a></li>
+												
+										 <li><a href="#contact" class="scroll"><span>contact</span></a></li>
+											</ul>
+										</div>
+										<a class="boxclose" id="boxclose"> <span> </span></a>
+									</div>                                  
+								</div> 	
+							</div>  	  
+						</div>
+					
+			         <script type="text/javascript">
+						var $ = jQuery.noConflict();
+							$(function() {
+								$('#activator').click(function(){
+									$('#box').animate({'top':'0px'},900);
+								});
+								$('#boxclose').click(function(){
+								$('#box').animate({'top':'-1000px'},900);
+								});
+							});
+							$(document).ready(function(){
+							
+							$(".toggle_container").hide(); 
+							
+							$(".trigger").click(function(){
+								$(this).toggleClass("active").next().slideToggle("500");
+									return false; 
+							});
+												
+						});
+					</script>
+					
+				</div>
+			<div class="head-info">
+				<div class="head-info-text">
+					<p>Fan of Ethnic?</p>
+					<h3>Kraft It!</h3>
+					<p class="bottom-text">Biggest  
+						Handicraft Distributors
+                  </p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content-got">
+			<div class="col-md-4 got-info">
+				<div class="got-info-text">
+					<p>Do you</p>
+					<h2>feel</h2>
+					<p class="top-text">
+						the need to Decorate your home?
+				  </p>
+				</div>
+				<p class="middle-text">
+					Portfolio
+			  </p>
+				<p class="bottom-text">
+					The crafts of India have been valued throughout time, their existence today proves the efforts put into their preservation.Kraft Suite India is an exquisite collection of these handmade crafts and tradition inspired items.
+			  </p>
+				<p class="read">&nbsp;</p>
+			</div>
+			<div class="col-md-4 img-red">
+				<img src="images/12.jpg" alt="" />
+			</div>
+			<div class="col-md-4 img-green">
+				<img src="images/14.jpg" alt="" />
+				<div class="img-info">
+					<p>benefit from</p>
+					<h3>THIS SUMMER</h3>
+					<p class="bottom-text">
+						campaign
+					</p>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		
+		<div id="gallery" class="about-models">
+			<div class="grid-left">
+				<div class="grid-left-info">
+					<h3>CRAFTS</h3>
+					<p class="bottom-text">
+						CRAFTS possess the essence of life.</p>
+				</div>
+			</div>
+			<div class="middle-left">
+				<div class="middle-left-top">
+					<div class="middle-left-top-info">
+						<h3>CRAFTS</h3>
+						<p class="bottom-text">
+							CRAFTS possess the essence of life.
+						</p>
+					</div>
+				</div>
+				<div class="middle-left-bottom">
+					<div class="middle-left-top-info">
+						<h3>CRAFTS</h3>
+						<p class="bottom-text">
+							CRAFTS possess the essence of life.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="middle-right">
+				<div class="middle-right-top">
+					<div class="middle-left-top-info">
+						<h3>CRAFTS</h3>
+						<p class="bottom-text">
+							CRAFTS possess the essence of life.
+						</p>
+					</div>
+				</div>
+				<div class="middle-right-bottom">
+					<div class="middle-left-top-info">
+						<h3>CRAFTS</h3>
+						<p class="bottom-text">
+							CRAFTS possess the essence of life.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="middle-right-grid">
+				<div class="grid-left-info">
+					<h3>CRAFTS</h3>
+					<p class="bottom-text">
+						CRAFTS possess the essence of life.</p>
+				</div>
+			</div>
+			<div class="grid-right">
+				<div class="grid-left-info">
+					<h3>CRAFTS</h3>
+					<p class="bottom-text">
+						CRAFTS possess the essence of life.</p>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		
+		
+		<div class="contact">
+			<div class="contact-bg">
+				<!-- container -->
+				<div class="container">
+					<div class="contact-text">
+						<div class="col-md-6">
+							<div class="about-fashion">
+								<h3>About Kraft Suite</h3>
+								<p>Leaders in the handicrafts market.</p>
+							</div>
+							<div class="blog">
+								<h3>From our Blog</h3>
+								<p class="caption">by us(Shagun,Palavi,Antara,Navneet,Rohini)</p>
+								<p><span>ICONIFY Your HOMES</span>
+									When it comes to culture and arts, India is a very rich country. The people of India are greatly involved in creating high quality Indian handicrafts. You can find a variety of handicraft products available in the Indian market that have earned immense popularity in the global market as well. These handicrafts represent the traditions and culture of India. They are used in important means to preserve the country’s rich heritage, culture and traditional art, talents and skills. India is one among the key manufacturer and supplier of Indian handicrafts products.
+ </p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div id="contact" class="Quick-Contact">
+								<h3>Quick Contact</h3>
+								<form>
+									<input type="text" class="text" maxlength="20" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+									<input type="text" class="text" maxlength="20" value="Phone Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone Number';}">
+									<textarea class="text" value="Message" onfocus="this.value = ''" onblur="if (this.value == '') {this.value = 'Message';}" >Message</textarea>
+									<input type="submit" value="Send">
+								</form>
+							</div>
+							
+					  </div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				
+				<div class="border-bottom"> </div>
+				
+				<div class="footer">
+					
+					<div class="clearfix"> </div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+		
+		
+	
+	</body>
+</html>
